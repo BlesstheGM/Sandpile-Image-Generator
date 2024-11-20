@@ -34,6 +34,8 @@ for 3) is often revealed to be a beautiful pattern with complex symmetry.
 
 The main objective of the project was to compare the results of the serial and parallel solution and compare the time it takes to generate sandpiles using different values, si at the end we can decide whether it's worth parallizing and if so when is it worth it. The Report.pdf further elaborates the scope of the project and analyses the results with different computer architecture. Also looks at the challenges encountered while conducting the experiment.
 
+The input folder contains different value parameters files we will be using to generate the sandpiles(on our output folder)
+
 ## Prerequisites <a name = "prerequisites"></a>
 
 GNU Make:
