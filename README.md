@@ -50,9 +50,9 @@ Shows you the results and time it takes to generate an image with a 65 by 65 all
 
 ## 🎈 Usage <a name="usage"></a>
 
-1.Go to the project folder
-2.execute the command: make run
-3.This will execute the code with the default input parameters input/65_by_65_all_4.csv output/65_by_65_all_4.png
+1. Go to the project folder
+2. execute the command: make run
+3. This will execute the code with the default input parameters input/65_by_65_all_4.csv output/65_by_65_all_4.png
 
 OR 
 
