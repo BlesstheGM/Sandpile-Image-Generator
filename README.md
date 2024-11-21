@@ -8,12 +8,11 @@
 
 ---
 
-<p align="center">This project compares the time taken to generate an Abelian sandpile when using a parallel and serial solution. 
+<p align="center">This project compares the time taken to generate an Abelian sandpile using a parallel and serial solution. It demonstrates the advantages of parallelization and multithreading in computational simulations. <br> </p>
 
-    <br> 
-</p>
 
 - [About](#about)
+- [Enhancements](#enhancements)
 - [Prerequisites](#prerequisites)
 - [Installing](#installing)
 - [Running the Application](#tests)
@@ -23,18 +22,22 @@
 
 
 ## 🧐 About <a name = "about"></a>
-In the Abelian Sandpile, each cell contains a certain number of "grains of sand". When the number
-of grains in a cell exceeds 4, in the next time step the cell "topples", distributing grains evenly to its
-neighboring cells (left, right, up and down) and keeping any remainder. The edge, or border, of the
-automaton grid is a “sink” – for cells on the border, their distribution to the border will “disappear”
-into the sink. An Abelian Sandpile evolves from a starting configuration (usually something simple
-like all cells set to the value 4) until it reaches a stable state, where all cells have fewer than 4 grains.
-If this final state is coloured according to the cell values (black for 0, green for 1, blue for 2 and red
-for 3) is often revealed to be a beautiful pattern with complex symmetry.
+The Abelian Sandpile is a cellular automaton in which each cell contains a number of grains of sand. When the grains in a cell exceed a threshold (typically 4), the cell "topples," distributing grains to neighboring cells. This continues until the system reaches a stable state where no cell exceeds the threshold. The final stable configuration often reveals beautiful patterns of symmetry and complexity.
 
-The main objective of the project was to compare the results of the serial and parallel solution and compare the time it takes to generate sandpiles using different values, si at the end we can decide whether it's worth parallizing and if so when is it worth it. The Report.pdf further elaborates the scope of the project and analyses the results with different computer architecture. Also looks at the challenges encountered while conducting the experiment.
+This project simulates sandpile evolution for various input configurations and generates colored output images based on the final stable state. It also benchmarks serial and parallel solutions to compare their performance under different input sizes and conditions.
+
+The results are analyzed in the included Report.pdf, which explores the trade-offs of parallelization, its impact on performance, and the challenges encountered during the process.
 
 The input folder contains different value parameters files we will be using to generate the sandpiles(on our output folder)
+
+🔄 Enhancements <a name = "enhancements"></a>
+This project was originally implemented as a sequential solution. I extended and optimized it by introducing parallelization and multithreading, resulting in significant performance improvements for larger inputs.
+
+Key Changes:
+Parallel Computation: Introduced multithreading using the Fork/Join Framework, enabling efficient computation of sandpile stabilization across multiple threads.
+Scalable Performance: Reduced computation time significantly for larger grid sizes, leveraging parallel execution.
+Benchmarked Comparison: Conducted detailed benchmarks to compare serial vs. parallel performance for varying input sizes and configurations.
+Thread-safe Design: Ensured correctness through synchronization and safe thread interactions.
 
 ## Prerequisites <a name = "prerequisites"></a>
 
@@ -69,4 +72,5 @@ make run ARGS="input/517_by_517_centre_534578.csv output/517.png"
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- Blessing Hlongwane
+- Blessing Hlongwane<br>
+<b>Note:<b> This project builds upon an earlier sequential implementation and introduces parallel processing to improve scalability and performance for computationally intensive tasks.
