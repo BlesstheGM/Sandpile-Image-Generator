@@ -30,7 +30,7 @@ The results are analyzed in the included Report.pdf, which explores the trade-of
 
 The input folder contains different value parameters files we will be using to generate the sandpiles(on our output folder)
 
-🔄 Enhancements <a name = "enhancements"></a>
+## 🔄 Enhancements <a name = "enhancements"></a>
 This project was originally implemented as a sequential solution. I extended and optimized it by introducing parallelization and multithreading, resulting in significant performance improvements for larger inputs.
 
 Key Changes:
