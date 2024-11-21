@@ -34,10 +34,11 @@ The input folder contains different value parameters files we will be using to g
 This project was originally implemented as a sequential solution. I extended and optimized it by introducing parallelization and multithreading, resulting in significant performance improvements for larger inputs.
 
 Key Changes:
-Parallel Computation: Introduced multithreading using the Fork/Join Framework, enabling efficient computation of sandpile stabilization across multiple threads.
-Scalable Performance: Reduced computation time significantly for larger grid sizes, leveraging parallel execution.
-Benchmarked Comparison: Conducted detailed benchmarks to compare serial vs. parallel performance for varying input sizes and configurations.
-Thread-safe Design: Ensured correctness through synchronization and safe thread interactions.
+
+- Parallel Computation: Introduced multithreading using the Fork/Join Framework, enabling efficient computation of sandpile stabilization across multiple threads.
+- Scalable Performance: Reduced computation time significantly for larger grid sizes, leveraging parallel execution.
+- Benchmarked Comparison: Conducted detailed benchmarks to compare serial vs. parallel performance for varying input sizes and configurations.
+- Thread-safe Design: Ensured correctness through synchronization and safe thread interactions.
 
 ## Prerequisites <a name = "prerequisites"></a>
 
