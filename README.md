@@ -43,7 +43,7 @@ Key Changes:
 ## Prerequisites <a name = "prerequisites"></a>
 
 GNU Make:
-Linux: Pre-installed on most distributions othrwise install using your package manager if missing.
+Linux: Pre-installed on most distributions othrwise install using your package manager if missing.<br>
 Windows: Install make on git bash 
 
 
